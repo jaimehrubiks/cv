@@ -1,3 +1,4 @@
+% !TeX root = ./cv.tex
 % !TEX program = xelatex
 \documentclass[a4paper,10pt]{article}
 
@@ -14,6 +15,33 @@
 \usepackage{titlesec}					%custom \section
 \usepackage{enumitem}% http://ctan.org/pkg/enumitem
 
+\usepackage[utf8]{inputenc}
+
+\newcommand*\jjglobe{\includegraphics[width=.8em]{globe}} 
+
+\newcommand{\jjglober}{%
+  \begingroup\normalfont
+  \raisebox{-.25\height}{\includegraphics[height=1.0em]{globe}} ff%
+%   \includegraphics[height=\fontcharht\font`\B]{globe}%
+  \endgroup
+    
+}
+
+\usepackage{hyperref}[2012/08/18]
+\usepackage{graphicx}
+\ifxetex
+  \usepackage{letltxmacro}
+  \setlength{\XeTeXLinkMargin}{1pt}
+  \LetLtxMacro\SavedIncludeGraphics\includegraphics
+  \def\includegraphics#1#{% #1 catches optional stuff (star/opt. arg.)
+    \IncludeGraphicsAux{#1}%
+  }%
+  \newcommand*{\IncludeGraphicsAux}[2]{%
+    \XeTeXLinkBox{%
+      \SavedIncludeGraphics#1{#2}%
+    }%
+  }%
+\fi
 
 \geometry{left=1.0in, right=1.0in, top=0.6in, bottom=0.6in}
 
@@ -91,18 +119,17 @@ ItalicFont = Fontin-Italic.otf
 %     \textsc{email:}     & \href{mailto:jjhidalgar@gmail.com}{jjhidalgar@gmail.com}
 % \end{tabular}
 
-\begin{tabular}{rp{4.0cm}rp{4.0cm}rp{4.0cm}}
+\begin{tabular}{p{1.0cm}p{4.0cm}rp{4.0cm}p{1.5cm}p{4.0cm}}
     \textsc{Email:} & \href{mailto:jjhidalgar@gmail.com}{jjhidalgar@gmail.com} & 
     \textsc{Phone:\newline} & +1 (312) 934-8690 \newline +34 636 837 837  &
-    \textsc{LinkedIn:} &\href{https://www.linkedin.com/in/jjhidalgar/}{jjhidalgar} 
+    \textsc{LinkedIn:} \newline \textsc{Github:} & \href{https://www.linkedin.com/in/jjhidalgar/}{jjhidalgar} \newline \href{https://github.com/jaimehrubiks}{jaimehrubiks}
 \end{tabular}
 
 %Section: Education
 \section{Summary}
 \begin{tabular}{rp{13.6cm}}
   \begin{minipage}[t]{1\columnwidth}%
-  Master of Telecommunications Engineering specialized in networking, IT operations and information security. Experienced in developing and leading real engineering projects. Seeking to obtain a position in a high challenging engineering environment where my academic skills, experience and creativity will add highest value to the organization.
-    \end{minipage}\tabularnewline
+  Master of Telecommunications Engineering specialized in networking, DevOps and cybersecurity. Experienced in developing and leading real engineering projects. Seeking to obtain a position in a high challenging engineering environment where my academic skills, experience and creativity will add highest value to the organization.    \end{minipage}\tabularnewline
 \end{tabular}
 
 %Section: Education
@@ -112,8 +139,8 @@ ItalicFont = Fontin-Italic.otf
  \textsc{Aug 2018 - Jul 2019}& \textbf{Master of Information Technology and Management}\\
  & \footnotesize{Illinois Institute of Technology, Chicago} \\
  %& \footnotesize{Major: Telematics - Computer Science} \\
- & Major: COMPUTER AND INFORMATION SECURITY \\ 
- & \emph{Currently researching on Kubernetes deployments} \\ &\\
+ & Major: COMPUTER AND INFORMATION SECURITY \\ &\\
+%  & \emph{Currently researching on Kubernetes deployments} \\ &\\
 
  \textsc{Oct 2017 - Jul 2018}& \textbf{Master of Telecommunications Engineering}\\
  & \footnotesize{University of the Basque Country, Spain} \\
@@ -125,8 +152,9 @@ ItalicFont = Fontin-Italic.otf
  %& \footnotesize{Major: Telematics - Computer Science} \\
  & Major: Telematics - Computer Science \\
  & Thesis: \emph{``Analysis and implementation of machine learning models in} \\
- & \hspace{12mm}\emph{ real time in Big Data platforms and sensible to Concept Drift}'' \\
-& Cumulative \normalsize \textsc{GPA}: 3.82/4
+ & \hspace{12mm}\emph{ real time in Big Data platforms and sensible to Concept Drift}'' 
+% & Cumulative \normalsize \textsc{GPA}: 3.82/4
+
 
 \end{tabular}
 \vspace{-.3in}
@@ -175,166 +203,11 @@ ItalicFont = Fontin-Italic.otf
 \section{Skills}
 \begin{tabular}{r|l}
 \textsc{Languages} & Spanish, English, Basque, French (Basic) \\
-\textsc{Programming} & C, Java, Node, Bash, Python, Matlab, Web Stack \\
-\textsc{Technologies} & Networking, Protocols, Linux, Cloud Computing, Information Security, IT Ops \\
+\textsc{Programming} & C, Java, Nodejs, Bash, Python, Matlab, Web Stack \\
+\textsc{Technologies} & Networking, Protocols, Linux, Cloud Computing, Kubernetes, Pentesting  \\
 \textsc{Other Knowledge} & Electronics, Signal Processing, Office \\
 \textsc{Hobbies} & Rubiks Cubes, Video Games, Roller Skating
 \end{tabular}
 
-% %Section: Languages
-% \section{Languages}
-% \begin{tabular}{rl}
-%  \textsc{Italian:}&Mothertongue\\
-% \textsc{English:}&Fluent\\
-% \textsc{French:}&Basic Knowledge\\
-% \end{tabular}
-
-% \section{Computer Skills}
-% \begin{tabular}{rl}
-%  Basic Knowledge:& \textsc{php}, my\textsc{sql}, \textsc{html}, Access, \textsc{Linux}, ubuntu, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}\\
-% Intermediate Knowledge:& \textsc{vba}, Excel, Word, PowerPoint\\
-% \end{tabular}
-
-% \section{Interests and Activities}
-% Technology, Open-Source, Programming\\
-% Paradoxes in Decision Making, Psychoanalysis, Behavioural Finance\\
-% Football, Travelling
-
-% \newpage
-% \par{\centering\Large \hypertarget{grds}{Master of Science in \textsc{Finance}}\par}\large{\centering Grades\par}\normalsize
-% \begin{center}
-% \begin{tabular}{lcc}
-% \multicolumn{1}{c}{\textsc{Exam}}&\textsc{Grade}&\textsc{Credit Hrs}\\ \hline
-% Corporate Finance (Valuation)	&25&	6\\
-% Financial Statement Analysis	&28&	6\\
-% Statistics	&27&	6\\
-% Theory of Finance	&26&	6\\
-% Quantitative Methods for Finance	&30&	6\\
-% Econometrics	&24	&6\\
-% Derivatives	&31&	6\\
-% Management of Financial and Insurance Companies	&30&	6\\
-% Business Law	&31&	6\\
-% Investment Banking	&28&	6\\ \\
-		
-% Behavioral Models for Economics and Finance	&29&	6\\
-% Numerical Methods for Finance	&29&	6\\
-% Advanced Derivatives	&30&	6\\
-% Fixed Income (Advanced Methods)	&30&	6\\ \\
-		
-% English Language	&30&	4\\
-% French Language	&31&	4\\
-		
-% Internship	&	&8\\
-		
-% Final Thesis	&	&20\\
-		
-% 		& Total&120\\\cline{2-3}
-% &\textsc{Gpa}&\textbf{28.61}
-% \end{tabular}
-% \end{center}
-% \bigskip
-% \hrule
-% \bigskip
-% \par{\centering\Large \hypertarget{grds_cleli}{Undergraduate Degree in \textsc{Law and Business Administration}}\par}\large{\centering Grades\par}\normalsize
-
-% \begin{center}
-
-% \tablefirsthead{%
-%   \multicolumn{1}{c}{\textsc{Esame (\textsc{ita})}}&\multicolumn{1}{c}{\textsc{Exam (\textsc{eng})}}&\textsc{Grade}&\textsc{Credit Hrs}\\ \hline}
-% \tablehead{%
-% \multicolumn{1}{c}{\textsc{Esame (\textsc{ita})}}&\multicolumn{1}{c}{\textsc{Exam (\textsc{eng})}}&\textsc{Grade}&\textsc{Credit Hrs}\\ \hline
-% }
-% \tabletail{%
-% }
-% \tablelasttail{}	
-
-%  \begin{supertabular}{p{4.9cm} p{4.9cm} c c}
-% Economia aziendale&Theory and principles of management& 28 & 8\\
-% Istituzioni di diritto privato&Principles of private law&30&8\\
-%  Istituzioni di diritto pubblico 
-% &
-%  Principles of public law 
-% & 30&
-%  6 
-% \\
-% Matematica generale 
-% & Mathematics 
-% &31&8\\
-%  Contabilit\`a e Bilancio 
-% & Accounting and Financial statements 
-% & 31 & 8\\
-%  Diritto del lavoro 
-% &
-%  Labour law 
-% & 30&
-% 4 
-% \\
-%  Informatica & Computer skills &29& 4 
-% \\
-%  Economia e gestione delle imprese & Corporate management &31&6 
-% \\
-%  Microeconomia & Microeconomics &30&8 
-% \\
-%  Contabilit\`a e bilancio 2 & Accounting and financial statements 2 
-% &29&8 \\
-%  Diritto commerciale & Company and business law &30&8 
-% \\
-%  Macroeconomia & Macroeconomics &29&8 
-% \\
-%  Statistica & Statistics &30&6\\
-%  Diritto delle procedure concorsuali & Insolvency law &31&4 
-% \\
-%  Finanza aziendale 
-% & Corporate finance 
-% &31 &8 \\
-%  Matematica finanziaria & Financial mathematics &31&4 
-% \\
-%  Programmazione e controllo 
-% & Management accounting &31&8 
-% \\
-% Lingua Inglese \textsc{c1}& English Language \textsc{c1}& 25&6\\ 
-% Diritto tributario & Tax law &30&6 
-% \\
-% Organizzazione e sistemi informativi aziendali &Management information systems &28&6 
-% \\
-%  Strategia e politica aziendale* 
-% & Business strategy* & 29& 6 
-% \\
-% Derivati*&Derivatives*&30&6\\
-% Opzionale all'estero* & Corporate Financial Strategy* &30&6\\
-% Lingua Francese \textsc{b1} & French Language \textsc{b1}&31&6\\
-% Economia dei mercati e degli intermediari finanziari* 
-% &Financial markets and institutions* &30&6 
-% \\
-% Revisione aziendale 
-% &Financial auditing &31&6 
-% \\
-% Scienza delle finanze &Public economics &30&6 
-% \\
-%  Lavoro finale& Final report&&6\\
-% & & Total&180\\\cline{3-4}
-% & &\textsc{Gpa}&\textbf{29.85}\\ \\ \multicolumn{4}{l}{\footnotesize A star (*) indicates that the course was taken at the \textbf{University of Southern California}, Los Angeles, \textsc{usa}}
-%  \end{supertabular}
-% \end{center}
-% \bigskip
-% \hrule
-% \bigskip
-% \par{\centering\Large \hypertarget{grds_usc}{Exchange Program at \textsc{usc}, Los Angeles}\par}\large{\centering Grades\par}\normalsize
-
-% \begin{center}
-% \begin{tabular}{lcc}
-% \multicolumn{1}{c}{\textsc{Exam}}&\textsc{Grade}&\textsc{Grade Points}\\ \hline
-% Corporate Financial Strategy	&A&	4\\
-% Derivatives	&A&	4\\
-% Money, Credit, and Banking	&A&	4\\
-% Business Strategy & A-& 3.5\\
-% & &\\\cline{2-3}
-%  &\textsc{Gpa}&\textbf{3.875}
-% \end{tabular}
-% \end{center}
-%\newpage
-%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
-
-%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
 
 \end{document}
