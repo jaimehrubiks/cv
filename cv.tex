@@ -43,11 +43,12 @@
   }%
 \fi
 
-\geometry{left=1.0in, right=1.0in, top=0.5in, bottom=0.5in}
+\geometry{left=0.8in, right=0.8in, top=0.3in, bottom=0.3in}
 
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+% \definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\definecolor{linkcolour}{rgb}{0,0.0,0.0}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
 
@@ -68,7 +69,7 @@ ItalicFont = Fontin-Italic.otf
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{3pt}{3pt}
+\titlespacing{\section}{0pt}{0pt}{2pt}
 %Tweak a bit the top margin
 %\addtolength{\voffset}{-1.3cm}
 
@@ -81,7 +82,7 @@ ItalicFont = Fontin-Italic.otf
 \setlength{\TPHorizModule}{30mm}
 \setlength{\TPVertModule}{\TPHorizModule}
 \textblockorigin{2mm}{0.65\paperheight}
-\setlength{\parindent}{0pt}
+\setlength{\parindent}{00pt}
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
@@ -119,70 +120,80 @@ ItalicFont = Fontin-Italic.otf
 %     \textsc{email:}     & \href{mailto:jjhidalgar@gmail.com}{jjhidalgar@gmail.com}
 % \end{tabular}
 
-\begin{tabular}{p{1.0cm}p{4.0cm}rp{4.0cm}p{1.5cm}}
-    \textsc{Email:} & \href{mailto:jjhidalgar@gmail.com}{jjhidalgar@gmail.com} & 
-    \textsc{Phone:\newline} & +1 (312) 934-8690 \newline +34 636 837 837  &
-    \href{https://www.linkedin.com/in/jjhidalgar/}{linkedin.com/in/jjhidalgar} \newline \href{https://github.com/jaimehrubiks}{github.com/jaimehrubiks}
-\end{tabular}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%Section: Education
-\section{Summary}
-\begin{tabular}{rp{13.6cm}}
-  \begin{minipage}[t]{1\columnwidth}%
-  Master of Telecommunications Engineering specialized in DevOps, cybersecurity and networking. Experienced in developing and leading real engineering projects. Seeking to obtain a position in a high challenging engineering environment where my academic skills, experience and creativity will add highest value to the organization.    \end{minipage}\tabularnewline
-\end{tabular}
+\vspace{-.15in}
 
-%Section: Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\begin{tabular}{cccc}
+    \href{mailto:jjhidalgar@gmail.com}{jjhidalgar@gmail.com} & 
+    +1 (312) 934-8690 &
+    \href{https://www.linkedin.com/in/jjhidalgar/}{linkedin.com/in/jjhidalgar} &
+    \href{https://github.com/jaimehrubiks}{github.com/jaimehrubiks}
+\end{tabular}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{-.00in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\begin{tabular}{c}
+  \hline \\[-0.8em]
+  Professional in DevOps, Cybersecurity and Networking
+  % Master of Telecommunications Engineering specialized in DevOps, cybersecurity and networking
+\end{tabular}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \vspace{-.1in}
+
+\renewcommand{\arraystretch}{0.6}% Tighter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Education}
 \begin{tabular}{rp{13.6cm}}
 
  \textsc{Aug 2018 - Aug 2019}& \textbf{Master of Information Technology and Management}\\
- & \footnotesize{Illinois Institute of Technology, Chicago} \\
+ & \footnotesize{Illinois Institute of Technology | Chicago (USA)} \\
  %& \footnotesize{Major: Telematics - Computer Science} \\
- & Major: Computer and Information Security | Current GPA: 4.0 \\ &\\
+ & Specialized in Computer and Information Security | Current GPA: 4.0 \\ &\\
 %  & \emph{Currently researching on Kubernetes deployments} \\ &\\
 
- \textsc{Oct 2017 - Jul 2018}& \textbf{Master of Telecommunications Engineering}\\
- & \footnotesize{University of the Basque Country, Spain} \\
+ \textsc{Oct 2018 - Aug 2019}& \textbf{Master of Telecommunications Engineering}\\
+ & \footnotesize{University of the Basque Country | Bilbao (Spain)} \\
  %& \footnotesize{Major: Telematics - Computer Science} \\
- & Major: Telematics - Computer Science \\&\\
+ & Specialized in Telematics - Computer Science \\&\\
  
  \textsc{Sep 2013 - Jul 2017}& \textbf{Bachelor's Degree in Telecommunications Engineering}\\
- & \footnotesize{University of the Basque Country, Spain} \\
+ & \footnotesize{University of the Basque Country | Bilbao (Spain)} \\
  %& \footnotesize{Major: Telematics - Computer Science} \\
- & Major: Telematics - Computer Science 
+ & Specialized in Telematics - Computer Science 
 %  & Thesis: \emph{``Analysis and implementation of machine learning models in} \\
 %  & \hspace{12mm}\emph{ real time in Big Data platforms and sensible to Concept Drift}'' 
 % & Cumulative \normalsize \textsc{GPA}: 3.82/4
 
-
 \end{tabular}
-\vspace{-.3in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\begin{tabular}{r|p{11cm}}
+\vspace{-.1in}
 
-%Section: Work Experience at the top
-\section{Achievements}
-\begin{tabular}{rp{13.6cm}}
-\textsc{March} 2018 & Rank \#1 in Bachelor's Degree in \textsc{Telecommunications Engineering} \\%\href{https://www.ehu.eus/documents/6810447/9245968/2018+03+20+NdP+Entrega+diplomas+2018.pdf/fe66cb16-e67b-8cb0-01ca-73fe373ce92c}{\hfill | \footnotesize Press report}\\
-&\footnotesize{Achieving highest promotion score of 10/10. Obtained special honors in 18 courses.} \\&\\
-
-\textsc{July} 2017 & Honors in Bachelor's Thesis with a score of 10 \\% \href{https://addi.ehu.es/handle/10810/23285?show=full}{\hfill | \footnotesize Description}\\
-& \footnotesize{Thesis: \emph{``Analysis and implementation of real-time machine learning models in}} \\
-& \footnotesize{ \hspace{10mm}\emph{ Big Data platforms and sensible to concept drift}'' }\\&\\
-
-2014 - 2018 & IDOM Prize for the best academic records in Engineering School\\% \href{https://www.elcorreo.com/bizkaia/alumnos-sobresalientes-20180116213541-nt.html}{\hfill | \footnotesize Press report}\\
-&\footnotesize{ Four times awarded the special prize for achieving the highest grades (2014, 2016, 2017, 2018)} \\
-\end{tabular}
-
-
-%Section: Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experience}
-\begin{tabular}{rp{13.6cm}}
+\begin{tabular}{rp{13.3cm}}
 
- \textsc{2017 - 2018}& \textbf{Bilbao Dynamics} - Bilbao (Spain)\href{https://bilbaodynamics.com/}{\hfill | \footnotesize bilbaodynamics.com}\\
+ \textsc{Feb 2017 - Dec 2018}& \textbf{Bilbao Dynamics} - Bilbao (Spain)\href{https://bilbaodynamics.com/}{\hfill | \footnotesize bilbaodynamics.com}\\
  & Volunteer - Engineer and Teacher \\ 
- & \footnotesize{ \begin{itemize}[noitemsep,topsep=-10pt]
+ & \footnotesize{ \begin{itemize}[noitemsep,topsep=3pt]
  \vspace{-0.1in}
  \item Non-profit organization that teaches electronics, robotics, and programming
  \item Organized multiple courses and volunteered in teaching diverse knowledge areas
@@ -190,40 +201,111 @@ ItalicFont = Fontin-Italic.otf
 
  \end{itemize}} \\
 
-
-
- \textsc{2016 - 2017}& \textbf{Noisewatch Project Team} - Bilbao (Spain)\href{http://noise.watch}{\hfill | \footnotesize www.noise.watch}\\
+ \textsc{Jun 2016 - Sep 2017}& \textbf{Noisewatch Project Team} - Bilbao (Spain)\href{http://noise.watch}{\hfill | \footnotesize www.noise.watch}\\
  & Software Engineer \\
- & \footnotesize{ \begin{itemize}[noitemsep,topsep=40pt,nolistsep]
+ & \footnotesize{ \begin{itemize}[noitemsep,topsep=3pt]
  \vspace{-0.1in}
  \item Multidisciplinary team hired by city council for reducing noise pollution
- \item Directed the software team and designed a complete solution for the device
+ \item Directed the software team and designed complete solution for the device
  \item Assisted the hardware team in noise measurement signal processing
- \item Achieved new technical skills, improved in teamwork and trained myself to work in professional engineering environments
+ \item Achieved new technical skills and trained myself to work in professional engineering environments
  \end{itemize}} \\
 
- \textsc{}& \textbf{Favorite Personal Projects} \\
- & \footnotesize{ \begin{itemize}[noitemsep,topsep=-10pt]
- \vspace{-0.1in}
- \item Developed a free video and music downloader with over 3000 users - Maintained online since 2015
- \item Programmed a PIC16 microcontroller ROM flasher and memory viewer via serial port
-%  \item Programmed a PIC16 microcontroller flasher and memory viewer
-%  \item Designed and developed software that helped the organization gain awareness and ease education
- \end{itemize}} \\&\\
- 
+%  \textsc{}& \textbf{Favorite Personal Projects} \\
+%  & \footnotesize{ \begin{itemize}[noitemsep,topsep=-10pt]
+%  \vspace{-0.1in}
+%  \item Developed a free video and music downloader with over 3000 users - Maintained online since 2015
+%  \item Programmed a PIC16 microcontroller ROM flasher and memory viewer via serial port
+% %  \item Programmed a PIC16 microcontroller flasher and memory viewer
+% %  \item Designed and developed software that helped the organization gain awareness and ease education
+%  \end{itemize}} \\&\\
+\vspace{-.2in}
 \end{tabular}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
- \vspace{-.3in}
+%  \vspace{-.3in}
 
-%Section: Scholarships and additional info
-\section{Skills}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \section{Skills}
 \begin{tabular}{r|l}
 \textsc{Languages} & Spanish, English, Basque, French (Basic) \\
 \textsc{Programming} & C, Java, Nodejs, Bash, Python, Matlab, Web Stack \\
 \textsc{Technologies} & Networking, Linux, Cloud Computing, Kubernetes, Pentesting, Blockchain  \\
 \textsc{Other Knowledge} & Electronics, Signal Processing, Office \\
-\textsc{Hobbies} & Rubiks Cubes, Video Games, Roller Skating, HackTheBox CTF
+\textsc{Hobbies} & Rubiks Cubes, Video Games, Roller Skating, Lan Parties
 \end{tabular}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Achievements}
+\begin{tabular}{rp{13.6cm}}
+\textsc{Mar} 2018 & Rank \#1 in Bachelor's Degree in \textsc{Telecommunications Engineering} \\%\href{https://www.ehu.eus/documents/6810447/9245968/2018+03+20+NdP+Entrega+diplomas+2018.pdf/fe66cb16-e67b-8cb0-01ca-73fe373ce92c}{\hfill | \footnotesize Press report}\\
+&\footnotesize{Achieving highest promotion score of 10/10 | Obtained special honors in 18 courses} \\&\\
+
+\textsc{Jul} 2017 & Honors in Bachelor's Thesis with a score of 10 \\% \href{https://addi.ehu.es/handle/10810/23285?show=full}{\hfill | \footnotesize Description}\\
+& \footnotesize{Thesis: \emph{``Analysis and implementation of real-time machine learning models in}} \\
+& \footnotesize{ \hspace{10mm}\emph{ Big Data platforms and sensible to concept drift}'' }\\&\\
+
+\textsc{Jul} 2017 & Bizkaia Talentia Program Certification \\% \href{https://addi.ehu.es/handle/10810/23285?show=full}{\hfill | \footnotesize Description}\\
+& \footnotesize{Participated in the Bizkaia Talentia Program (2016-2017), targeted at undergraduate seniors \newline with an excellent academic record and other skills identified and evaluated by university authorities} \\&\\
+% & \footnotesize{Targeted at the students who living in Biscay with the highest potential at the three Basque universities} \\&\\
+
+2014 | 2016 | 2017 | 2018 & IDOM Prize for the best academic records in Engineering School\\% \href{https://www.elcorreo.com/bizkaia/alumnos-sobresalientes-20180116213541-nt.html}{\hfill | \footnotesize Press report}\\
+&\footnotesize{ Four times awarded the special prize for achieving the highest grades} \\
+\end{tabular}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+\begin{tabular}{rp{14.85cm}}
+
+ May 2015 & \textbf{MusicBOO} | Multiplatform music and video downloader \href{http://musicboo.hontzakdio.com/}{\hfill | \footnotesize musicboo.hontzakdio.com}\\
+ & \footnotesize{ \begin{itemize}[noitemsep,topsep=3pt]
+ \vspace{-0.1in}
+ \item Developed free video and music downloader, player and converter
+ \item Maintained backend online since 2015 with over 3000 users
+ \end{itemize}} \\
+
+ Oct 2015 & \textbf{YarHarPictor} | PIC16 ROM Flasher \\
+ & \footnotesize{ \begin{itemize}[noitemsep,topsep=3pt]
+ \vspace{-0.1in}
+ \item Programmed a PIC16 microcontroller ROM flasher and memory viewer via serial port
+ \item Adopted by university microcontroller course to assist students implementing their programs
+ \end{itemize}} \\
+
+ May 2017 & \textbf{notMAIL} | Message and Notifications delivery protocol \\
+ & \footnotesize{ \begin{itemize}[noitemsep,topsep=3pt]
+ \vspace{-0.1in}
+ \item Invented email replacement focused on notifications managed by user controlled subscriptions
+ \item Designed protocol specification and communications API
+ \item Programmed multiple API libraries for different languages
+ \item Implemented server node and two independent clients (webapp and Raspberry PI)
+ \end{itemize}} \\
+
+%  \textbf{LeagueInfo}& Online game players tracker \\
+%  & \footnotesize{ \begin{itemize}[noitemsep,topsep=-10pt]
+%  \vspace{-0.1in}
+%  \item Created a League of Legends' players online tracker with a notification system
+%  \item Allowed to spectate games when that feature was not available in the official client
+%  \end{itemize}} \\
+
+ Nov 2018 & \textbf{SSM} | Server management tool for sysadmins (university course project)\\
+ & \footnotesize{ \begin{itemize}[noitemsep,topsep=3pt]
+ \vspace{-0.1in}
+ \item Facilitates reporting multiple servers or IOT devices' status from central platform 
+ \item Allows to send batch commands and gather information from a list of servers
+ \end{itemize}} \\
+
+%  \textbf{musicBOT}& Two wheel programmable robot\\
+%  & \footnotesize{ \begin{itemize}[noitemsep,topsep=-10pt]
+%  \vspace{-0.1in}
+%  \item Designed a programmable (numeric pad and twitter) two wheel robot based on a PIC16
+%  \item Participated with a workmate in designing from scatch a 3d printable chassis
+%  \end{itemize}} \\
+
+\end{tabular}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \end{document}
